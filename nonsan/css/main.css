@@ -1,0 +1,2077 @@
+@import url(common.css);
+@import url(default.css);
+
+
+.main_wrapper {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+
+
+/* side PC 시작 */
+.container {
+    display: flex;
+    margin-top: 140px;
+}
+.container .side {
+    position: relative;
+    width: 30%;
+    border-right: 1px solid #e9e9e9;
+}
+.container .side .side_wrap {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 330px;
+}
+.container .side .first {
+    position: relative;
+    margin: 40px 0 0 0  ;
+}
+.container .side .first.fixed {
+    top: 130px;
+}
+.container .side .first.end {
+    position: absolute;
+    top: auto;
+    bottom: 100px;
+}
+.container .side .first .controlbox {
+    position: absolute;
+    left: 70px;
+    top: 300px;
+    z-index: 10;
+    width: 190px;
+    height: 40px;
+    background-color: #fff;
+    color: #3d3d3d;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+.container .side .second {
+    position: relative;
+    margin: 60px 0 0 0;
+}
+.container .side .second .controlbox {
+    position: absolute;
+    left: 70px;
+    top: 300px;
+    z-index: 10;
+    width: 190px;
+    height: 40px;
+    background-color: #fff;
+    color: #3d3d3d;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+/* popup 공통 시작 */
+.container .side .popup {
+    height: 322px;
+}
+.container .side .controlbox .controlbox_wrap {
+    margin: 3px 0 0 0;
+}
+.container .side .controlbox .controlbox_wrap .count {
+    float: left;
+    margin: 0 0 0 31px;
+    font-family: SBAggro;
+    font-weight: 200;
+    width: 40px;
+    bottom: 7px;
+}
+.container .side .controlbox .controlbox_wrap .count .swiper-pagination-current {
+    font-weight: 700;
+}
+.container .side .controlbox .controlbox_wrap .count .swiper-pagination-total {
+    font-weight: 200;
+}
+.container .side .controlbox .controlbox_wrap .click {
+    float: right;
+    margin: 0 31px 0 0;
+}
+.container .side .controlbox .controlbox_wrap .click .button_prev {
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/main/popup_prev.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+}
+.container .side .controlbox .controlbox_wrap .click .button_pause {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    background-image: url(../images/main/popup_pause.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+}
+.container .side .controlbox .controlbox_wrap .click .button_pause.play {
+    background-image: url(../images/main/popup_play.svg);
+}
+.container .side .controlbox .controlbox_wrap .click .button_next {
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/main/popup_next.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+}
+/* popup 공통 종료 */
+/* side PC 종료 */
+
+
+
+/* side 반응형 시작 */
+@media screen and (max-width:1220px) {
+    .container {
+        display: block;
+        margin-top: 140px;
+    }
+    .container .side {
+        padding: 40px 0 0 0;
+        width: 100%;
+        border-right: none;
+    }
+    .container .side .side_wrap {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: auto;
+        max-width: none;
+    }
+    .container .side .first {
+        position: relative;
+        margin: 0;
+        width: 330px;
+    }
+    .container .side .second {
+        margin: 0;
+        width: 330px;
+    }
+}
+@media screen and (max-width:700px) {
+    .container {
+        margin-top: 90px;
+    }
+    .container .side {
+        padding: 40px 0 0 0;
+        width: 100%;
+        border-right: none;
+    }
+    .container .side .side_wrap {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: auto;
+        max-width: none;
+    }
+    .container .side .first {
+        position: relative;
+        margin: 0;
+        width: 330px;
+    }
+    .container .side .second {
+        margin: 30px 0 0 0;
+        width: 330px;
+    }
+}
+/* side 반응형 종료 */
+
+
+
+/* side 모바일 시작 */
+@media screen and (max-width:360px) {
+    .container {
+        display: block;
+        margin-top: 80px;
+    }
+    .container .side {
+        position: relative;
+        width: 100%;
+        border-right: none;
+    }
+    .container .side .side_wrap {
+        width: auto;
+    }
+
+
+    .container .side .controlbox .controlbox_wrap .click {
+        margin: 3px 31px 0 0;
+    }
+}
+/* side 모바일 종료 */
+
+
+
+
+/* search PC 시작 */
+.container .main {
+    width: 70%;
+    overflow: hidden;
+}
+.container .main .find .search_box {
+    padding: 80px 0 0 0;
+}
+.container .main .find .search {
+    width: 100%;
+    height: 60px;
+    border: 3px solid #3d3d3d;
+    border-radius: 0 20px 20px 20px;
+}
+.container .main .find .search label {
+    display: none;
+}
+.container .main .find .search input[type="text"] {
+    float: left;
+    width: 370px;
+    height: 55px;
+    margin: 0 0 0 30px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 20px;
+}
+.container .main .find .search input[type="text"]::placeholder {
+    font-weight: 700;
+    color: #999;
+}
+.container .main .find .search .btn {
+    float: left;
+    width: 55px;
+    height: 55px;
+}
+.container .main .find .search input.btn {
+    float: right;
+    margin: 0 15px 0 0;
+    border: 0; 
+    background-color: transparent;
+    background-image: url(../images/main/search_ico.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 0;
+    cursor: pointer;
+}
+/* search PC 종료 */
+
+
+
+/* search 반응형 시작 */
+@media screen and (max-width:520px) {
+    .container .main .find .search input[type="text"] {
+        width: 65%;
+    }
+}
+/* search 반응형 시작 */
+
+
+
+/* search 모바일 시작 */
+@media screen and (max-width:1220px) {
+    .container .main {
+        width: 100%;
+    }
+}
+@media screen and (max-width:360px) {
+    .container .main {
+        width: 360px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    .container .main .find .search {
+        height: 40px;
+        border: 3px solid #3d3d3d;
+        border-radius: 0 15px 15px 15px;
+    }
+    .container .main .find .search input[type="text"] {
+        float: left;
+        height: 35px;
+        margin: 0 0 0 20px;
+        font-size: 14px;
+    }
+    .container .main .find .search .btn {
+        width: 35px;
+        height: 35px;
+    }
+    .container .main .find .search input.btn {
+        margin: 0 10px 0 0;
+        background-size: 23px;
+    }
+}
+/* search 모바일 종료 */
+
+
+
+
+
+/* often PC 시작 */
+.container .main .find .mayor_wrap {
+    display: flex;
+    margin: 40px 0 31px 0;
+}
+.container .main .find .often {
+    width: 630px;
+}
+.container .main .find .often .often_tit {
+    display: flex;
+}
+.container .main .find .often .often_tit h2 {
+    position: relative;
+    font-size: 22px;
+    color: #3d3d3d;
+}
+.container .main .find .often .often_tit h2::after {
+    position: absolute;
+    left: 355px;
+    top: 18px;
+    width: 274px;
+    height: 1px;
+    background-color: #f4f4f4;
+    content: "";
+}
+.container .main .find .often .often_tit h2 strong {
+    font-weight: 700;
+    color: #003994;
+}
+.container .main .find .often .often_tit span {
+    padding: 10px 0 0 0;
+    font-size: 12px;
+    color: #999;
+    margin: 0 0 0 20px;
+}
+.container .main .find .often .often_service {
+    margin: 24px 0 0 0;
+}
+.container .main .find .often .often_service li {
+    padding-top: 20px;
+    width: 25%;
+}
+.container .main .find .often .often_service .often_ico {
+    text-align: center;
+}
+
+.container .main .find .often .often_service .often_ico i {
+    font-size: 60px;
+}
+.container .main .find .often .often_service .often_ico p {
+    font-weight: 700;
+}
+
+.container .main .find .often .often_service {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .main .find .mayor {
+    position: relative;
+    margin: 0 0 0 40px;
+    width: 520px;
+}
+.container .main .find .mayor .txt {
+    margin: 60px 0 0 30px;
+    font-family: SBAggro;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.container .main .find .mayor .txt span {
+    font-size: 40px;
+    color: #003994;
+    font-weight: 900;
+}
+.container .main .find .mayor .txt p {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    font-weight: 200;
+    color: #999;
+}
+.container .main .find .mayor .txt .mayor_button {
+    display: inline-block;
+    margin: 40px 0 0 0;
+}
+.container .main .find .mayor .txt .mayor_button ul {
+    display: flex;
+}
+.container .main .find .mayor .txt .mayor_button ul li {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #003994;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+.container .main .find .mayor .txt .mayor_button ul .open {
+    padding: 8px 20px 4px 20px;
+}
+.container .main .find .mayor .txt .mayor_button ul .promise {
+    margin: 0 0 0 10px;
+    padding: 8px 19px 4px 19px;
+}
+.container .main .find .mayor .photobox {
+    position: absolute;
+    right: 0;
+    top: 31px;
+    z-index: -1;
+    width: 252px;
+}
+/* often PC 종료 */
+
+
+
+/* often 반응형 시작 */
+@media screen and (max-width:1700px) {
+    .container .main .find .often .often_tit h2::after {
+        display: none;
+    }
+    .container .main .find .mayor .txt {
+        font-size: 14px;
+    }
+    .container .main .find .mayor .txt span {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1220px) {
+    .container .main .find .mayor_wrap {
+        justify-content: space-between;
+    }
+    .container .main .find .often {
+        width: 500px;
+    }
+    .container .main .find .often .often_tit h2::after {
+        display: none;
+    }
+    .container .main .find .mayor {
+        margin: 0 0 0 20px;
+    }
+    .container .main .find .mayor .txt {
+        font-size: 14px;
+    }
+    .container .main .find .mayor .txt span {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1100px) {
+    .container .main .find .often {
+        width: 100%;
+    }
+    .container .main .find .often .often_service li:last-child {
+        display: block;
+    }
+    .container .main .find .mayor {
+        width: 100%;
+    }
+    .container .main .find .mayor .photobox {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 252px;
+    }
+}
+@media screen and (max-width:750px) {
+    .container .main .find .mayor {
+        margin-left: 0;
+    }
+    .container .main .find .mayor_wrap {
+        flex-direction: column;
+    }
+    .container .main .find .often {
+        margin-bottom: 50px;
+    }
+    .container .main .find .often .often_tit span {
+        display: none;
+    }
+    .container .main .find .mayor .txt {
+        margin: 60px 0 0 30px;
+        font-family: SBAggro;
+        font-size: 20px;
+        font-weight: 700;
+        color: #1d1d1d;
+    }
+    .container .main .find .mayor .txt span {
+        font-size: 40px;
+        color: #003994;
+        font-weight: 900;
+    }
+    .container .main .find .mayor .photobox {
+        position: absolute;
+        right: 0;
+        top: 31px;
+        width: auto;
+    }
+    .container .main .find .mayor .photobox img {
+        height: 280px;
+    }
+}
+@media screen and (max-width:650px) {
+    .container .main .find .often .often_tit span {
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .container .main .find .mayor .txt {
+        margin-left: 0;
+        font-size: 16px;
+    }
+    .container .main .find .mayor .txt span {
+        font-size: 32px;
+    }
+    .container .main .find .mayor .txt p {
+        display: none;
+    }
+    .container .main .find .mayor .photobox {
+        top: 25px;
+    }
+    .container .main .find .mayor .photobox img {
+        height: 220px;
+    }
+}
+/* often 반응형 종료 */
+
+
+
+/* often 모바일 시작 */
+@media screen and (max-width:360px) {
+    .container .main .find .mayor_wrap {
+        display: block;
+        margin: 50px 0 0 0;
+    }
+    .container .main .find .often {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .container .main .find .often .often_tit h2 {
+        font-size: 18px;
+    }
+    .container .main .find .often .often_tit h2::after {
+        left: 131px;
+        top: 11px;
+        width: 189px;
+    }
+    .container .main .find .often .often_tit span {
+        display: none;
+    }
+    .container .main .find .often .often_service {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .container .main .find .often .often_service li {
+        padding: 0 0 30px 0;
+    }
+    .container .main .find .often .often_service .often_ico {
+        text-align: center;
+    }
+    .container .main .find .often .often_service .up {
+        display: inline-block;
+    }
+    .container .main .find .often .often_service .down {
+        display: inline-block;
+        margin: 0;
+    }
+
+
+    .container .main .find .mayor {
+        margin: 30px 0 0 0;
+        width: 100%;
+        height: 170px;
+    }
+    .container .main .find .mayor .txt {
+        margin: 0;
+        padding: 30px 0 0 0;
+        font-size: 12px;
+    }
+    .container .main .find .mayor .txt span {
+        font-size: 26px;
+    }
+    .container .main .find .mayor .txt p {
+        display: none;
+    }
+    .container .main .find .mayor .txt .mayor_button {
+        margin: 20px 0 0 0;
+    }
+    .container .main .find .mayor .txt .mayor_button ul li {
+        width: 80px;
+        font-size: 10px;
+    }
+    .container .main .find .mayor .txt .mayor_button ul .open {
+        padding: 8px 16px 4px 16px;
+    }
+    .container .main .find .mayor .txt .mayor_button ul .promise {
+        margin: 0 0 0 5px;
+        padding: 8px 14px 8px 14px;
+    }
+    .container .main .find .mayor .photobox {
+        top: 0;
+        z-index: -1;
+        width: 152px;
+    }
+    .container .main .find .mayor .photobox img {
+        height: 169px;
+    }
+}
+/* often 종료 시작 */
+
+
+
+
+
+
+
+/* news PC 시작 */
+.container .main .news {
+    position: relative;
+}
+.container .main .news::before {
+    position: absolute;
+    left: -50%;
+    top: 0;
+    z-index: -1;
+    width: 200%;
+    height: 460px;
+    background-image: linear-gradient(to right, #7DC243, #003994);
+    opacity: 0.1;
+    content: "";
+}
+.container .main .news .tit {
+    display: flex;
+    padding: 43px 0 0 0;
+}
+.container .main .news .tit h2 {
+    font-size: 22px;
+    color: #3d3d3d;
+}
+.container .main .news .tit h2 strong {
+    font-weight: 700;
+    color: #003994;
+}
+.container .main .news .tit h2::after {
+    position: absolute;
+    left: 355px;
+    top: 61px;
+    width: 833px;
+    height: 1px;
+    background-color: #ededed;
+    content: "";
+}
+.container .main .news .tit span {
+    position: relative;
+    padding: 10px 0 0 0;
+    font-size: 12px;
+    color: #999;
+    margin: 0 0 0 20px;
+}
+.container .main .news .noticebox {
+    margin: 24px 0 0 0;
+}
+.container .main .news .noticebox .tab {
+    display: inline-block;
+}
+.container .main .news .noticebox .tab ul li.active .more {
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+    height: 60px;
+    background-color: #003994;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 0 10px 10px 10px;
+    border-bottom: transparent;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+}
+.container .main .news .noticebox .tab ul li.active .more h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.container .main .news .noticebox .tab ul li.active .more i {
+    display: block;
+    margin: 17px 0 0 0;
+}
+.container .main .news .noticebox .tab ul li .more i {
+    display: none;
+}
+.container .main .news .noticebox .tab ul li .more {
+    display: block;
+    width: 170px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #ededed;
+}
+.container .main .news .noticebox .tab ul li .more.last {
+    border-bottom: transparent;
+}
+.container .main .news .noticebox .tab ul li .more h3 {
+    margin: 0 0 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container .main .news .noticebox .tab ul li .detail {
+    display: none;
+    position: absolute;
+    left: 220px;
+    top: 101px;
+}
+.container .main .news .noticebox .tab ul li.active .detail {
+    display: block;
+}
+.container .main .news .noticebox .tab ul li .detail ul {
+    display: flex;
+}
+.container .main .news .noticebox .tab ul li .detail ul li {
+    position: relative;
+    margin: 0 30px 0 0;
+    background-color: #fff;
+    border-radius: 0 10px 10px 10px;
+    width: calc(25% - 22.5px);
+    word-break: break-all;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+}
+.container .main .news .noticebox .tab ul li .detail ul li:last-child {
+    margin-right: 0;
+}
+.container .main .news .noticebox .tab ul li .detail.sunshine ul li.right {
+    width: calc(100% - 200px);
+}
+.container .main .news .noticebox .tab ul li .detail ul li a {
+    position: relative;
+    display: block;
+    padding: 20px 20px 0 20px;
+    height: 300px;
+}
+.container .main .news .noticebox .tab ul li .detail ul li a h4 {
+    font-size: 14px;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 1.5;
+    height: 3em;
+}
+.container .main .news .noticebox .tab ul li .detail ul li a p {
+    margin: 20px 0 20px 0;
+    font-size: 12px;
+    font-weight: 200;
+    color: #666;
+    overflow: hidden;
+    line-height: 1.5;
+    height: 13.5em;
+}
+.container .main .news .noticebox .tab ul li .detail ul li a::before {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    height: 1px;
+    border-top: 1px dashed #ededed;
+    content: "";
+}
+.container .main .news .noticebox .tab ul li .detail ul li a::after {
+    position: absolute;
+    left: 0;
+    bottom: 45px;
+    width: 100%;
+    height: 1px;
+    border-top: 1px dashed #ededed;
+    content: "";
+}
+.container .main .news .noticebox .tab ul li .detail ul li a .dep_date {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+    font-size: 10px;
+    color: #999;
+}
+/* news PC 종료 */
+
+
+
+/* news 반응형 시작 */
+@media screen and (max-width:1700px) {
+    .container .main .news .tit h2::after {
+        display: none;
+    }
+}
+@media screen and (max-width:1600px) {
+    .container .main .news .noticebox .tab ul li .detail ul li {
+        width: calc(33% - 10px);
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li:nth-child(3) {
+        margin-right: 0;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li:last-child {
+        display: none;
+    }
+}
+@media screen and (max-width:900px) {
+    .container .main .news .noticebox .tab ul li .detail ul li {
+        width: calc(50% - 10px);
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li:nth-child(2) {
+        margin-right: 0;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li:nth-child(3) {
+        display: none;
+    }
+}
+@media screen and (max-width:750px) {
+    .container .main .news .tit span {
+        display: none;
+    }
+}
+@media screen and (max-width:700px) {
+    .container .main .news {
+        height: 500px;
+    }
+    .container .main .news::before {
+        height: 550px;
+    }
+    .container .main .news .noticebox .tab {
+        width: 100%;
+    }
+    .container .main .news .noticebox .tab ul {
+        display: flex;
+        align-items: center;
+    }
+    .container .main .news .noticebox .tab ul li {
+        display: block;
+        width: 20%;
+        text-align: center;
+    }
+    .container .main .news .noticebox .tab ul li .detail {
+        left: 0;
+        top: 160px;
+        width: 100%;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li {
+        text-align: left;
+    }
+    .container .main .news .noticebox .tab ul li.last {
+        background-image: none;
+    }
+    .container .main .news .noticebox .tab ul li.active .more {
+        display: block;
+        background-color: transparent;
+        width: auto;
+        height: 30px;
+        font-weight: 700;
+        color: #003994;
+        border-bottom: transparent;
+        box-shadow: none;
+    }
+    .container .main .news .noticebox .tab ul li.active .more i {
+        display: none;
+    }
+    .container .main .news .noticebox .tab ul li.active .more h3 {
+        height: 30px;
+        line-height: 30px;
+    }
+    .container .main .news .noticebox .tab ul li .more {
+        display: inline-block;
+        width: auto;
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        border-bottom: none;
+    }
+    .container .main .news .noticebox .tab ul li .more h3 {
+        margin-left: 0;
+    }
+    .container .main .news .noticebox .tab ul li .more img {
+        display: none;
+    }
+}
+@media screen and (max-width:450px) {
+    .container .main .news .noticebox .tab ul li .detail ul li {
+        margin-right: 0;
+        width: 100%;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li:nth-child(2) {
+        display: none;
+    }
+}
+/* news 반응형 종료 */
+
+
+
+/* news 모바일 시작 */
+@media screen and (max-width:360px) {
+    .container .main .news {
+        height: 600px;
+    }
+    .container .main .news::before {
+        height: 640px;
+    }
+    .container .main .news .tit {
+        padding: 50px 0 0 0;
+    }
+    .container .main .news .tit h2 {
+        font-size: 18px;
+    }
+    .container .main .news .tit h2::after {
+        left: 94px;
+        top: 64px;
+        width: 226px;
+    }
+    .container .main .news .tit span {
+        display: none;
+    }
+    .container .main .news .noticebox .tab {
+        width: 320px;
+    }
+    .container .main .news .noticebox .tab ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container .main .news .noticebox .tab ul li {
+        position: relative;
+        display: block;
+        padding: 0;
+    }
+    .container .main .news .noticebox .tab ul li.active .more {
+        display: inline-block;
+        width: 56px;
+        height: 21px;
+        background-color: transparent;
+        line-height: 21px;
+        font-weight: 700;
+        color: #003994;
+        border-radius: 0 10px 10px 10px;
+        border-bottom: transparent;
+        box-shadow: none;
+    }
+    .container .main .news .noticebox .tab ul li.active .more h3 {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+    }
+    .container .main .news .noticebox .tab ul li .more {
+        display: inline-block;
+        width: 56px;
+        height: 21px;
+        line-height: 21px;
+        font-size: 14px;
+        font-weight: 400;
+        border-bottom: none;
+    }
+    .container .main .news .noticebox .tab ul li .more h3 {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }    
+    .container .main .news .noticebox .tab ul li .more img {
+        display: none;
+    }
+    .container .main .news .noticebox .tab ul li .detail {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .container .main .news .noticebox .tab ul li.active .detail.bulletin {
+        top: 50px;
+        left: -64px;
+    }
+    .container .main .news .noticebox .tab ul li.active .detail.area {
+        top: 50px;
+        left: -128px;
+    }
+    .container .main .news .noticebox .tab ul li.active .detail.bidding {
+        top: 50px;
+        left: -192px;
+    }
+    .container .main .news .noticebox .tab ul li.active .detail.report {
+        top: 50px;
+        left: -256px;
+    }
+    .container .main .news .noticebox .tab ul li.active .detail {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 320px;
+        height: 100px;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li {
+        position: relative;
+        margin: 0 0 10px 0;
+        background-color: #fff;
+        border-radius: 0 10px 10px 10px;
+        word-break: break-all;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li a {
+        position: relative;
+        display: block;
+        padding: 18px 0 0 20px;
+        width: 320px;
+        height: 100px;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li a h4 {
+        width: 280px;
+        font-size: 16px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li a p {
+        display: none;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li a::before {
+        left: 0;
+        top: 60px;
+        width: 320px;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li a::after {
+        display: none;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li a .dep_date {
+        margin: 5px 0 0 0;
+        width: 280px;
+        font-size: 14px;
+    }
+    .container .main .news .noticebox .tab ul li .detail ul li:first-child,
+    .container .main .news .noticebox .tab ul li .detail ul li:nth-child(2),
+    .container .main .news .noticebox .tab ul li .detail ul li:nth-child(3),
+    .container .main .news .noticebox .tab ul li .detail ul li:last-child {
+        display: block;
+    }
+}
+/* news 모바일 종료 */
+
+
+
+/* service PC 시작 */
+.container .main .service .top .tit {
+    display: flex;
+    margin: 110px 0 0 0;
+}
+.container .main .service .top .tit h2 {
+    position: relative;
+    font-size: 22px;
+    color: #3d3d3d;
+}
+.container .main .service .top .tit h2::after {
+    position: absolute;
+    left: 351px;
+    top: 18px;
+    width: 839px;
+    height: 1px;
+    background-color: #f4f4f4;
+    content: "";
+}
+.container .main .service .top .tit h2 strong {
+    font-weight: 700;
+    color: #003994;
+}
+.container .main .service .top .tit span {
+    padding: 10px 0 0 0;
+    font-size: 12px;
+    color: #999;
+    margin: 0 0 0 20px;
+}
+.container .main .service .top .noticebox {
+    margin: 24px 0 0 0;
+}
+.container .main .service .top .noticebox .tab_menu {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.container .main .service .top .noticebox .tab_menu button {
+    display: none;
+}
+.container .main .service .top .noticebox .tab_menu ul {
+    white-space: nowrap;
+    font-size: 0;
+    line-height: 0;
+}
+.container .main .service .top .noticebox .tab_menu ul li {
+    display: inline-block;
+    width: 119px;
+    height: 50px;
+    text-align: center;
+}
+.container .main .service .top .noticebox .tab_menu ul li a {
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container .main .service .top .noticebox .tab_menu ul li.active a {
+    display: flex;
+    justify-content: center;
+    background-color: #003994;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 0 10px 10px 10px;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+}
+
+.container .main .service .top .noticebox .tab_contents {
+    position: relative;
+}
+.container .main .service .top .noticebox .tab_contents ul li {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+}
+.container .main .service .top .noticebox .tab_contents ul li .left {
+    float: left;
+    width: 200px;
+    height: 300px;
+    font-family: SBAggro;
+    text-align: center;
+}
+.container .main .service .top .noticebox .tab_contents ul li[data-name="sunshine"] .left {
+    color: #3d3d3d;
+    font-family: SBAggro;
+    background-image: url(../images/main/service_sunshine_illust_ico.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .main .service .top .noticebox .tab_contents ul li[data-name="army"] .left {
+    background-color: #367570;
+    color: #fff;
+}
+.container .main .service .top .noticebox .tab_contents ul li .left .left_ico {
+    display: block;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+.container .main .service .top .noticebox .tab_contents ul li .left .left_ico i {
+    margin: 10px 0 0 0;
+    font-size: 100px;
+    color: #fff;
+}
+.container .main .service .top .noticebox .tab_contents ul li .right {
+    float: right;
+    width: calc(100% - 200px);
+}
+.container .main .service .top .noticebox .tab_contents ul li .right a {
+    display: block;
+    height: 300px;
+}
+.container .main .service .top .noticebox .tab_contents ul li .right a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .main .service .top .noticebox .tab_contents ul li.active {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 300px;
+}
+
+
+.container .main .service .top .noticebox .tab_contents ul li .left strong {
+    display: block;
+    margin: 30px 0 10px 0;
+    font-size: 24px;
+}
+.container .main .service .top .noticebox .tab_contents ul li .left span {
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 200;
+}
+
+
+
+
+.container .main .service .bottom {
+    margin: 350px 0 0 0;
+    height: 300px;
+}
+.container .main .service .bottom .userbox .tab > ul {
+    position: relative;
+    display: flex;
+    
+}
+.container .main .service .bottom .userbox .tab > ul > li {
+    width: 33.33%;
+    height: 50px;
+}
+.container .main .service .bottom .userbox .tab > ul > li a {
+    text-align: center;
+}
+.container .main .service .bottom .userbox .tab > ul > li .who {
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container .main .service .bottom .userbox .tab > ul > .citizen.active .who {
+    display: flex;
+    justify-content: center;
+    background-color: #7DC243;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 0 10px 0 0;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+}
+.container .main .service .bottom .userbox .tab > ul > .businessman.active .who {
+    display: flex;
+    justify-content: center;
+    background-color: #367570;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+}
+.container .main .service .bottom .userbox .tab > ul > li.active .who {
+    display: flex;
+    justify-content: center;
+    background-color: #003994;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 10px 0 0 0;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+}
+.container .main .service .bottom .userbox .tab > ul > li.active .who h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.container .main .service .bottom .userbox .tab ul > li .who h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.container .main .service .bottom .userbox .tab .detail {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+}
+.container .main .service .bottom .userbox .tab .detail > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 0 80px;
+}
+.container .main .service .bottom .userbox .tab .detail > ul > li {
+    position: relative;
+    padding-left: 10px;
+    width: 20%;
+    line-height: 50px;
+}
+.container .main .service .bottom .userbox .tab .detail > ul > li::before {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 3px;
+    height: 3px;
+    border: 2px;
+    background-color: #ccc;
+    content: "";
+}
+
+
+.container .main .service .bottom .userbox .tab ul .citizen.active .detail {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 200px;
+    border: 1px solid #7DC243;
+}
+.container .main .service .bottom .userbox .tab ul .businessman.active .detail {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 200px;
+    border: 1px solid #367570;
+}
+.container .main .service .bottom .userbox .tab ul .tourist.active .detail {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 200px;
+    border: 1px solid #003994;
+}
+/* service PC 종료 */
+
+
+
+/* service 반응형 시작 */
+@media screen and (max-width:1700px) {
+    .container .main .service .top .tit h2::after {
+        display: none;
+    }
+}
+@media screen and (max-width:1440px) {
+    .container .main .service .bottom .userbox .tab .detail > ul {
+        padding-left: 40px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .container .main .service .top .noticebox .tab_menu {
+        display: block;
+    }
+    .container .main .service .top .noticebox .tab_menu ul {
+        height: 50px;
+        line-height: 50px;
+    }
+    .container .main .service .top .noticebox .tab_menu ul li {
+        text-align: center;
+    }
+    .container .main .service .top .noticebox .tab_menu button {
+        display: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .more {
+        display: none;
+        font-size: 0;
+        line-height: 0;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .more {
+        display: none;
+        font-size: 0;
+        line-height: 0;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .detail {
+        top: 30px;
+    }
+
+}
+@media screen and (max-width:900px) {
+    .container .main .service {
+        height: 500px;
+    }
+    .container .main .service .bottom {
+        display: none;
+    }
+}
+@media screen and (max-width:700px) {
+    .container .main .service .top .noticebox .tab_contents ul li .left {
+        display: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .right {
+        width: 100%;
+    }
+}
+/* service 반응형 종료 */
+
+
+
+/* service 모바일 시작 */
+@media screen and (max-width:360px) {
+    .container .main .service {
+        height: 500px;
+    }
+    .container .main .service .top .tit h2 {
+        font-size: 18px;
+    }
+    .container .main .service .top .tit h2::after {
+        left: 110px;
+        top: 12px;
+        width: 210px;
+    }
+    .container .main .service .top .tit span {
+        display: none;
+    }
+    .container .main .service .top .noticebox {
+        margin: 30px 0 0 0;
+    }
+    .container .main .service .top .noticebox .tab_menu.open {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .container .main .service .top .noticebox .tab_menu button {
+        position: relative;
+        border: 1px solid #ccc;
+        line-height: 38px;
+        width: 100%;
+        height: 38px;
+        text-align: left;
+        padding: 0 20px;
+    }
+    .container .main .service .top .noticebox .tab_menu ul li {
+        background-color: #fff;
+        border-top: 0;
+    }
+    .container .main .service .top .noticebox .tab_menu ul li a {
+        display: block;
+        line-height: 38px;
+        padding: 0 20px;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li {
+        width: auto;
+        height: auto;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .more {
+        display: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .more_last {
+        padding-right: 0;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .more {
+        background-color: transparent;
+        color: #003994;
+        border-radius: 0;
+        line-height: 40px;
+        box-shadow: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .more h3 {
+        display: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .more h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .detail {
+        top: 20px;
+        width: 320px;
+        height: 280px;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .detail ul li {
+        padding: 20px 0 15px 0;
+        width: 160px;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .detail ul li.left {
+        display: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .detail ul li .txt_group {
+        padding: 0;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .detail ul li .txt_group .group3,
+    .container .main .service .top .noticebox .tab_contents ul li .detail ul li .txt_group .group4 {
+        display: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .detail ul li .txt_group a {
+        padding: 0;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li .detail ul li.right {
+        width: 320px;
+    }
+
+
+    .container .main .service .top .noticebox .tab_contents ul li.active .detail.sunshine .right {
+        height: 280px;
+        background-image: url(../images/main/service_sunshine_mobile.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .detail.sunshine .right .m_no {
+        display: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .detail.army .right {
+        height: 280px;
+        background-image: url(../images/main/service_army_mobile.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .detail.army .right .m_no {
+        display: none;
+    }
+    .container .main .service .top .noticebox .tab_contents ul li.active .detail {
+        border: 1px solid #ccc;
+    }
+
+
+    .container .main .service .bottom {
+        display: none;
+    }
+}
+/* service 모바일 종료 */
+
+
+
+/* introduce PC 시작 */
+.container .main .introduce {
+    position: relative;
+}
+.container .main .introduce::before {
+    position: absolute;
+    left: -50%;
+    top: 0;
+    z-index: -1;
+    width: 200%;
+    height: 915px;
+    background-color: #F5FCFA;
+    content: "";
+}
+.container .main .introduce .txt {
+    padding: 80px 0 0 0;
+    font-family: SBAggro;
+    text-align: center;
+}
+.container .main .introduce .txt h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.container .main .introduce .txt h2 strong {
+    position: relative;
+    background: linear-gradient(to right, #7DC243, #003994);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+.container .main .introduce .txt h2 strong::after {
+    position: absolute;
+    right: -30px;
+    top: -35px;
+    width: 73px;
+    height: 48px;
+    background-image: url(../images/main/introduce_icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+}
+.container .main .introduce .txt span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #999;
+}
+.container .main .introduce .photo {
+    margin: 40px 0 0 0;
+    font-family: SBAggro;
+}
+.container .main .introduce .photo .left {
+    float: left;
+    position: relative;
+    width: 49.5%;
+    height: 600px;
+    background-image: url(../images/main/introduce_photo_left.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.container .main .introduce .photo .left .line {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: calc(100% - 40px);
+    height: 560px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+.container .main .introduce .photo .left .line h3 {
+    margin: 43px 0 0 43px ;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+.container .main .introduce .photo .left .line h3 span {
+    color: #003994;
+}
+.container .main .introduce .photo .left .line .more {
+    margin: 10px 0 0 43px;
+}
+.container .main .introduce .photo .left .line .more a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    padding: 10px 15px 10px 15px;
+    color: #003994;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.container .main .introduce .photo .left .line .more a p {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+    line-height: 35px;
+}
+.container .main .introduce .photo .left .line .more a i {
+    font-size: 15px;
+}
+.container .main .introduce .photo .right {
+    float: left;
+    width: 50.5%;
+}
+.container .main .introduce .photo .right ul li {
+    display: inline-block;
+    margin: 0 0 40px 37px;
+    width: calc(50% - 40px);
+    height: 280px;
+    border-radius: 20px;
+}
+.container .main .introduce .photo .right ul li:nth-child(3),
+.container .main .introduce .photo .right ul li:nth-child(4) {
+    margin-bottom: 0;
+}
+.container .main .introduce .photo .right ul li a img {
+    margin: 20px 0 0 20px;
+}
+.container .main .introduce .photo .right ul li a h3 {
+    margin: 140px 0 0 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.container .main .introduce .photo .right ul li.kakao {
+    background-image: url(../images/main/introduce_photo_right01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .main .introduce .photo .right ul li.insta {
+    background-image: url(../images/main/introduce_photo_right02.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .main .introduce .photo .right ul li.youtube {
+    background-image: url(../images/main/introduce_photo_right03.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .main .introduce .photo .right ul li.facebook {
+    background-image: url(../images/main/introduce_photo_right04.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* introduce PC 종료 */
+
+
+
+
+
+/* introduce 반응형 시작 */
+@media screen and (max-width:1500px) {
+    .container .main .introduce .photo .left .line h3 {
+        margin: 30px 0 0 30px;
+        font-size: 30px;
+    }
+    .container .main .introduce .photo .left .line .more {
+        margin-left: 30px;
+    }
+    .container .main .introduce .photo .right ul li a h3 {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:900px) {
+    .container .main .introduce .photo .right ul li {
+        width: calc(100% - 40px);
+        
+    }
+    .container .main .introduce .photo .right ul li a h3 {
+        margin-top: 120px;
+        font-size: 24px;
+    }
+    .container .main .introduce .photo .right ul li:nth-child(2),
+    .container .main .introduce .photo .right ul li:nth-child(4) {
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .container .main .introduce .photo .left .line h3 {
+        margin: 20px 0 0 20px;
+        font-size: 30px;
+        width: 200px;
+    }
+    .container .main .introduce .photo .left .line .more {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .container .main .introduce .txt span {
+        display: none;
+    }
+    .container .main .introduce .photo .left {
+        width: 100%;
+    }
+    .container .main .introduce .photo .left .line h3 {
+        margin: 30px 0 0 30px;
+        font-size: 40px;
+        width: auto;
+    }
+    .container .main .introduce .photo .left .line .more {
+        margin-left: 30px;
+    }
+    .container .main .introduce .photo .left .line .more a {
+        width: 180px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    .container .main .introduce .photo .left .line .more a p {
+        font-size: 16px;
+        line-height: 50px;
+    }
+    .container .main .introduce .photo .right ul li {
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .container .main .introduce .txt h2 {
+        font-size: 40px;
+    }
+}
+/* introduce 반응형 종료 */
+
+
+
+/* introduce 모바일 시작 */
+@media screen and (max-width:360px) {
+    .container .main .introduce::before {
+        height: 540px;
+    }
+    .container .main .introduce .txt {
+        padding: 50px 0 0 0;
+    }
+    .container .main .introduce .txt h2 {
+        font-size: 26px;
+    }
+    .container .main .introduce .txt span {
+        display: none;
+    }
+    .container .main .introduce .photo .left {
+        width: 320px;
+        height: 325px;
+    }
+    .container .main .introduce .photo .left .line {
+        left: 10px;
+        top: 10px;
+        width: 300px;
+        height: 305px;
+    }
+    .container .main .introduce .photo .left .line h3 {
+        margin: 30px 0 0 20px ;
+        font-size: 20px;
+    }
+    .container .main .introduce .photo .left .line .more {
+        margin: 10px 0 0 15px;
+    }
+    .container .main .introduce .photo .left .line .more a {
+        width: 100px;
+        height: 25px;
+        padding: 5px 10px 5px 10px;
+        color: #003994;
+    }
+    .container .main .introduce .photo .left .line .more a p {
+        margin: 2px 0 0 0;
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .container .main .introduce .photo .left .line .more a img {
+        margin: 0 0 1px 0;
+        width: 10px;
+        height: 10px;
+    }
+    .container .main .introduce .photo .right {
+        float: left;
+        width: auto;
+        height: auto;
+    }
+    .container .main .introduce .photo .right ul li {
+        margin: 20px 0 0 0;
+        width: 320px;
+        height: 325px;
+    }
+    .container .main .introduce .photo .right ul li a h3 {
+        margin-top: 180px;
+    }
+}
+/* introduce 모바일 종료 */
+
+
+
+/* travel PC 시작 */
+.container .main .travel {
+    margin: 150px 0 100px 0;
+    font-family: SBAggro;
+}
+.container .main .travel .txt {
+    padding: 80px 0 40px 0;
+    font-family: SBAggro;
+    text-align: center;
+}
+.container .main .travel .txt h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.container .main .travel .txt h2 strong {
+    background: linear-gradient(to right, #7DC243, #003994);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+.container .main .travel .txt span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #999;
+}
+.container .main .travel .group {
+    position: relative;
+}
+.container .main .travel .group .about {
+    position: absolute;
+    left: 140px;
+    top: 60px;
+    width: 297px;
+    height: 297px;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 30px 30px 0 30px;
+}
+.container .main .travel .group .about .txt_group {
+    padding: 0 20px;
+}
+.container .main .travel .group .about .txt_group .top {
+    position: relative;
+    padding: 19px 0 25px 0;
+}
+.container .main .travel .group .about .txt_group .top::after {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 257px;
+    height: 1px;
+    background-color: rgba(255,255,255,0.5);
+    content: "";
+}
+.container .main .travel .group .about .txt_group .top h3 {
+    font-size: 20px;
+}
+.container .main .travel .group .about .txt_group .middle {
+    padding: 0 0 20px 0;
+}
+.container .main .travel .group .about .txt_group .middle span {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+.container .main .travel .group .about .txt_group .middle strong {
+    font-size: 30px;
+    font-weight: 700;
+}
+.container .main .travel .group .about .txt_group .bottom {
+    font-size: 12px;
+    font-weight: 100;
+    word-break: break-all;
+}
+
+
+
+
+
+.container .main .travel .group .popup {
+    height: 600px;
+}
+.container .main .travel .group .controlbox {
+    position: absolute;
+    left: 284px;
+    top: 341px;
+    width: 153px;
+    height: 30px;
+    z-index: 20;
+    border-radius: 0 0 0 15px;
+    color: #fff;
+    background-color: #003994;
+}
+.container .main .travel .group .controlbox .controlbox_wrap .count {
+    float: left;
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    font-weight: 200;
+    width: 40px;
+    top: 6px;
+}
+.container .main .travel .group .controlbox .controlbox_wrap .count .swiper-pagination-current {
+    font-weight: 700;
+}
+.container .main .travel .group .controlbox .controlbox_wrap .count .swiper-pagination-total {
+    font-weight: 200;
+}
+.container .main .travel .group .controlbox .controlbox_wrap .click {
+    float: right;
+    margin: 0 10px 0 0;
+}
+.container .main .travel .group .controlbox .controlbox_wrap .click .button_prev {
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/main/travel_control_prev_ico.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+}
+.container .main .travel .group .controlbox .controlbox_wrap .click .button_pause {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    background-image: url(../images/main/travel_control_pause_ico.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+}
+.container .main .travel .group .controlbox .controlbox_wrap .click .button_pause.play {
+    background-image: url(../images/main/travel_control_play_ico.svg);
+}
+.container .main .travel .group .controlbox .controlbox_wrap .click .button_next {
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/main/travel_control_next_ico.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    line-height: 0;
+}
+/* travel PC 종료 */
+
+
+
+
+/* travel 반응형 시작 */
+@media screen and (max-width:1400px) {
+    .container .main .travel .group .about {
+        left: 100px;
+    }
+    .container .main .travel .group .controlbox {
+        left: 244px;
+    }
+}
+@media screen and (max-width:800px) {
+    .container .main .travel .group .about {
+        left: 70px;
+        width: 240px;
+        height: 240px;
+    }
+    .container .main .travel .group .about .txt_group .top::after {
+        width: 200px;
+    }
+    .container .main .travel .group .about .middle span {
+        margin: 0 0 20px 0;
+    }
+    .container .main .travel .group .about .bottom p {
+        display: none;
+    }
+    .container .main .travel .group .controlbox {
+        left: 156px;
+        top: 282px;
+    }
+}
+@media screen and (max-width:600px) {
+    .container .main .travel .txt span {
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .container .main .travel .txt h2 {
+        font-size: 40px;
+    }
+}
+/* travel 반응형 종료 */
+
+
+
+/* travel 모바일 시작 */
+@media screen and (max-width:360px) {
+    .container .main .travel {
+        margin: 100px 0 100px 0;
+    }
+    .container .main .travel .txt {
+        padding: 80px 0 40px 0;
+        font-family: SBAggro;
+        text-align: center;
+    }
+    .container .main .travel .txt h2 {
+        font-size: 26px;
+    }
+    .container .main .travel .txt span {
+        display: none;
+    }
+    .container .main .travel .group .about {
+        left: 20px;
+        top: 20px;
+        width: 165px;
+        height: 165px;
+    }
+    .container .main .travel .group .about .txt_group .top {
+        padding: 20px 0 10px 0;
+    }
+    .container .main .travel .group .about .txt_group .top::after {
+        top: 52px;
+        width: 125px;
+    }
+    .container .main .travel .group .about .txt_group .top h3 {
+        font-size: 14px;
+    }
+    .container .main .travel .group .about .txt_group .middle {
+        padding: 10px 0 0 0;
+    }
+    .container .main .travel .group .about .txt_group .middle span {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .container .main .travel .group .about .txt_group .middle strong {
+        font-size: 18px;
+    }
+    .container .main .travel .group .about .txt_group .bottom {
+        display: none;
+    }
+    
+    
+    
+    
+    
+    .container .main .travel .group .popup {
+        height: 400px;
+    }
+    .container .main .travel .group .popup ul li a img {
+        width: auto;
+        height: 400px;
+    }
+    .container .main .travel .group .controlbox {
+        left: 55px;
+        top: 168px;
+        width: 130px;
+    }
+    .container .main .travel .group .controlbox .controlbox_wrap .count {
+        font-size: 10px;
+        width: 30px;
+        top: 9px;
+    }
+    .container .main .travel .group .controlbox .controlbox_wrap .click {
+        margin-top: 2px;
+    }
+    .container .main .travel .group .controlbox .controlbox_wrap .click .button_prev {
+        width: 12px;
+        height: 12px;
+    }
+    .container .main .travel .group .controlbox .controlbox_wrap .click .button_pause {
+        width: 12px;
+        height: 12px;
+        margin: 0 10px;
+    }
+    .container .main .travel .group .controlbox .controlbox_wrap .click .button_next {
+        width: 12px;
+        height: 12px;
+    }
+}
+/* travel 모바일 시작 */

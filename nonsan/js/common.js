@@ -26,6 +26,21 @@ $(document).ready(function(){
         }
     }
 
+
+    /* 메뉴에 마우스를 오버했을 때 */
+    // $('.header .header_bottom .gnb > ul > li > a').on('mouseenter focusin', function(){
+    //     $('.header .header_bottom .gnb').addClass('menu_open');
+    // });
+    // $('.header .header_bottom .gnb').on('mouseleave', function(){
+    //     $('.header .header_bottom .gnb').removeClass('menu_open');
+    // });
+    // $('.header .header_bottom .gnb > ul > li:last-child > ul > li:last-child > a').on('focusout', function(){
+    //     $('.header .header_bottom .gnb').removeClass('menu_open');
+    // });
+
+
+
+
     /*
         >>> 모바일 메뉴 열기 <<<
 

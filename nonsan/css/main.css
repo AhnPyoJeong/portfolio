@@ -23,13 +23,13 @@
     border-right: 1px solid #e9e9e9;
 }
 .container .side .side_wrap {
+    padding-top: 40px;
     margin: 0 auto;
     width: 90%;
     max-width: 330px;
 }
 .container .side .first {
     position: relative;
-    margin: 40px 0 0 0  ;
 }
 .container .side .first.fixed {
     top: 130px;

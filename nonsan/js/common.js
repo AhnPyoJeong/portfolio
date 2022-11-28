@@ -70,6 +70,14 @@ $(document).ready(function(){
 
 
 
+    /* top 버튼을 누르면 상단으로 스크롤 */
+    $('aside.to_top').on('click', function(){
+        $('html, body').animate({
+            scrollTop : 0
+        }, 500);
+    });
+
+
 
     
 
